@@ -20,15 +20,3 @@ class Markatt(models.Model):
     status=models.CharField(max_length=8,default="inactive")
     class Meta:
         db_table="markatt"
-'''
-class Attendance(models.Model):
-    userid=models.CharField(max_length=10,default=None)
-    name=models.CharField(max_length=100)
-    email=models.EmailField(unique=True)
-    contact=models.CharField(max_length=10,unique=True)
-    time=models.TimeField(null=True, blank=True)
-    date=models.DateField(default=datetime.date.today)
-    status=models.CharField(max_length=8,default="inactive")
-    class Meta:
-        db_table="attendance"
-'''
